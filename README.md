@@ -49,3 +49,5 @@ Or, install directly from the Visual Studio Code marketplace by searching for "P
 ## 🔐 License
 
 MIT License
+
+[MIT License](https://github.com/akshay5330/php-debug-snippets/blob/main/LICENSE.txt) © 2025 [Sahil Kothiya](https://github.com/akshay5330)

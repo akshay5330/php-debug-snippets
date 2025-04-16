@@ -3,9 +3,13 @@
     "displayName": "PHP Debug Snippets",
     "description": "A snippet extension to quickly debug using echo <pre>; print_r(); exit;",
     "icon": "images/logo.png",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "publisher": "SahilKothiya",
     "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/akshay5330/php-debug-snippets"
+    },
     "engines": {
         "vscode": "^1.70.0"
     },
