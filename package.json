@@ -1,0 +1,23 @@
+{
+    "name": "php-debug-snippets",
+    "displayName": "PHP Debug Snippets",
+    "description": "A snippet extension to quickly debug using echo <pre>; print_r(); exit;",
+    "icon": "images/logo.png",
+    "version": "1.0.5",
+    "publisher": "SahilKothiya",
+    "license": "MIT",
+    "engines": {
+        "vscode": "^1.70.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "php",
+                "path": "./snippets/php.json"
+            }
+        ]
+    }
+}

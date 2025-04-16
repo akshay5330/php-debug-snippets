@@ -1,0 +1,9 @@
+{
+    "Print and Exit Debug Line": {
+        "prefix": "pepr",
+        "body": [
+            "echo \"<pre>\"; print_r(${1:}); exit;"
+        ],
+        "description": "Echo <pre>, print_r, and exit on one line"
+    }
+}
