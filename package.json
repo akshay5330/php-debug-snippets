@@ -1,9 +1,9 @@
 {
     "name": "php-debug-snippets",
     "displayName": "PHP Debug Snippets",
-    "description": "A snippet extension to quickly debug using echo <pre>; print_r(); exit;",
+    "description": "A snippet extension to quickly debug PHP using echo <pre>; print_r(); exit;, var_dump, or json_encode.",
     "icon": "assets/images/logo.png",
-    "version": "1.0.7",
+    "version": "1.0.9",
     "publisher": "SahilKothiya",
     "license": "MIT",
     "repository": {

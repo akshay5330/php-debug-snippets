@@ -1,6 +1,6 @@
 # PHP Debug Snippets for Visual Studio Code
 
-This Visual Studio Code extension allows PHP developers to insert quick debugging snippets into their code, specifically for printing and exiting. The `Print and Exit Debug Line` snippet combines `print_r()` and `exit` to quickly output variable values and stop script execution.
+This Visual Studio Code extension allows PHP developers to insert quick debugging snippets into their code. It includes snippets for printing variables using `print_r()`, `var_dump()`, or `json_encode()` along with `exit` to stop script execution for debugging.
 
 ---
 
@@ -15,26 +15,40 @@ This Visual Studio Code extension allows PHP developers to insert quick debuggin
 
 ## 🚀 Features
 
-- ✅ **Insert Debugging Snippet for PHP**
-  - **Print and Exit Debug Line (`pepr`)**:
-    - This snippet inserts an `echo "<pre>"; print_r($variable); exit;` line in your code to easily debug variables by printing them in a readable format and immediately exiting the script.
+- ✅ **Insert Debugging Snippets for PHP**
+  - **Print and Exit Debug Line (`pepr`, alias: `prdie`)**:
+    - Inserts `echo "<pre>"; print_r($variable); exit;`
+  - **Var Dump and Exit (`vdie`)**:
+    - Inserts `echo "<pre>"; var_dump($variable); exit;`
+  - **JSON Encode and Exit (`jsonex`)**:
+    - Inserts `echo json_encode($variable, JSON_PRETTY_PRINT); exit;`
+  - **Comment Debug Line (`clrdbg`)**:
+    - Inserts a commented debug line for quick cleanup or temporary disablement
 
 ---
 
 ## 💡 Usage
 
-| Shortcut | Action                                                                |
-| -------- | --------------------------------------------------------------------- |
-| `pepr`   | Inserts `echo "<pre>"; print_r($variable); exit;` for quick debugging |
+| Shortcut | Action                                                          |
+| -------- | --------------------------------------------------------------- |
+| `pepr`   | Inserts `echo "<pre>"; print_r($variable); exit;`               |
+| `prdie`  | Alias for `pepr`                                                |
+| `vdie`   | Inserts `echo "<pre>"; var_dump($variable); exit;`              |
+| `jsonex` | Inserts `echo json_encode($variable, JSON_PRETTY_PRINT); exit;` |
+| `clrdbg` | Inserts a commented debug line                                  |
 
-To use, type `pepr` and press `Tab` to insert the line for debugging.
+To use a snippet, type its shortcut (e.g., `pepr`) and press `Tab`.
+
+Using clrdbg in Real Projects
+
+The clrdbg snippet simplifies PHP debugging by commenting out debug lines (e.g., `// DEBUG: echo "<pre>"; print_r($variable); exit;`) for temporary disablement. In Laravel projects, it ensures clean code by marking debug statements for easy removal before deployment.
 
 ---
 
 ## 📂 File Support
 
 - ✅ Works in all `.php` files
-- Targets folders in PHP projects, including Laravel projects
+- Ideal for PHP projects, including Laravel applications
 
 ---
 

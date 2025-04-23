@@ -1,9 +1,36 @@
 {
     "Print and Exit Debug Line": {
-        "prefix": "pepr",
+        "prefix": [
+            "pepr",
+            "prdie"
+        ],
         "body": [
             "echo \"<pre>\"; print_r(${1:}); exit;"
         ],
         "description": "Echo <pre>, print_r, and exit on one line"
+    },
+    "Print with var_dump and exit": {
+        "prefix": "vdie",
+        "body": [
+            "echo \"<pre>\";",
+            "var_dump(${1:});",
+            "exit;"
+        ],
+        "description": "Echo <pre>, var_dump, and exit"
+    },
+    "Print with json_encode and exit": {
+        "prefix": "jsonex",
+        "body": [
+            "echo json_encode(${1:}, JSON_PRETTY_PRINT);",
+            "exit;"
+        ],
+        "description": "Print json_encode with exit"
+    },
+    "Clear Debug Lines": {
+        "prefix": "clrdbg",
+        "body": [
+            "// DEBUG: ${1:echo \"<pre>\"; print_r($var); exit;}"
+        ],
+        "description": "Comment out debug line quickly"
     }
 }
